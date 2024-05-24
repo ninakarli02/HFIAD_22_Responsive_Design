@@ -1,14 +1,44 @@
-header {
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li{
-    color: orange;
+header {
+    padding: 16px;
+    color: blue;
+    display: flex;
+    justify-content: space-between;
 }
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+header li{
+    color: orange;
+    margin-bottom: 4px;
+}
+
+
+
+.header-navi-list {
+    display: flex;
+    gap: 16px;
+}
+
+.irgend-eine-id {
+    font-weight: 600;
+}
+
 body {
     /*background-image: url(images/hintergrundbild_2.png);
     background-repeat: no-repeat;
     background-size: 100%;*/
     background-color: lightblue;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
