@@ -1,0 +1,13 @@
+header {
+    color: blue;
+}
+
+li{
+    color: orange;
+}
+body {
+    background-image: url(images/hintergrundbild_2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
