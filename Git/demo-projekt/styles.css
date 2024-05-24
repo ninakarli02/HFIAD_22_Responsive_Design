@@ -6,8 +6,9 @@ li{
     color: orange;
 }
 body {
-    background-image: url(images/hintergrundbild_2.png);
+    /*background-image: url(images/hintergrundbild_2.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
+    background-color: lightblue;
     font-family:'Courier New', Courier, monospace;
 }
