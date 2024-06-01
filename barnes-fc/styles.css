@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+    line-height: 24pt;
+    letter-spacing: 1px;
+  }
+
+.white {
+    color: white;
+}  
+
+.black {
+    color: black;
+}  
+
+h3 {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14pt;
+    padding-bottom: 16px;
+
+  }
+h4 {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 11pt;
+    line-height: 15pt;
+
+
+  }
+
+
+p {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11pt;
+    line-height: 15pt;
+
+  }
+
+.rechtsbündig {
+    text-align: right;
+}
+
+
+header {
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+
+.header-navi-list {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+body {
+    background-color: blue;
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+}
+
+nav {
+    position: relative;
+    border-color: black ;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.burger-menu {
+    width: 60px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 40px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.dropdown-menu {
+ 
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+        
+}
+
+.dropdown-menu li {
+    padding: 16px 16px;
+
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 20pt;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu li:hover {
+    background-color: blue;
+}
+
+.dropdown-menu li a:hover {
+    color: white;
+}
+
+
+
+/* Toggle menu visibility */
+#toggle-menu:checked + .burger-menu + .dropdown-menu {
+    list-style: none;
+    padding: 12px;
+    display: flex;
+    justify-content:space-around;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    min-width: fit-content;
+    background-color: white;
+    background-size: 100%;    
+    border-top: 4px solid;
+    width: 100%;
+}
+
+
+.background {
+    display: grid;
+    height: 600vh;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+
+.grid-maerkli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Volle Höhe des Viewports */
+}
+
+.grid-maerkli img {
+    max-width: 100%; /* Damit das Bild responsiv bleibt */
+    max-height: 100%;
+}
+
+.column-blue {
+      background-color: blue;
+      min-height: 100vh;
+  }
+
+.column-white {
+    background-color: white;
+    min-height: 100vh;
+
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+  }
+
+.logo-white {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 30pt;
+  }
+
+.vierer-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 32px;
+    align-items: center;
+}
+
+
+
+.custom-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    overflow: hidden;
+    
+}
+
+.custom-box-top-blue {
+    background-color: blue;
+    height: 20%; /* Oberes Fünftel */
+    padding: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+
+.custom-box-top-black {
+    background-color: black;
+    height: 20%; /* Oberes Fünftel */
+    padding: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.custom-box-bottom-zweiergrid {
+    background-color: white;
+    height: 80%; /* Untere vier Fünftel */
+    padding: 16px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.custom-box-bottom {
+    background-color: white;
+    height: 80%; /* Untere vier Fünftel */
+    padding: 16px;
+    padding-top: 20px;
+
+
+
+}
+
+hr {
+    border-width: 1.6px;
+    color: black;
+    border-style: solid;
+
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    height: 180px;
+    width: 100%;
+
+}
+
+
+
+  /* <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 */
+
+
+
+.urbanist-regular {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+
+/* Barnes FC 
+
+position: absolute;
+width: 98px;
+height: 34px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+/* identical to box height, or 142% 
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #181818; 
+
+/* Frame 2 
+
+position: absolute;
+width: 355px;
+height: 360px;
+left: 33px;
+top: 580px;
+
+
+*/
+
