@@ -25,6 +25,10 @@ h2 {
     color: black;
 }  
 
+.center {
+    text-align: center;
+}
+
 h3 {
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
@@ -66,6 +70,7 @@ header {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
 }
@@ -86,8 +91,83 @@ body {
 section {
     width: 100%;
     height: 100%;
-    padding: 50px 30px;
+    padding: 50px 30px 30px 30px;
 }
+
+
+.section-placeholder {
+    height: 0;
+    visibility: hidden;
+}
+
+section:target .section-placeholder {
+    height: calc(20vh + 10px); /* 50px ist die ungefähre Höhe Ihrer Navigationsleiste, passen Sie diesen Wert entsprechend an */
+    visibility: visible;
+}
+
+
+
+@media (min-width: 780px) {
+    .section1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50%;
+        margin-left: auto;
+        overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt die Höhe der .custom-boxes übersteigt */
+
+    }
+}
+
+@media (min-width: 780px) {
+    .section2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 75%;
+        margin-left: auto;
+        overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt die Höhe der .custom-boxes übersteigt */
+
+    }
+} 
+
+@media (min-width: 1200px) {
+    .section2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50%;
+        margin-left: auto;
+        overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt die Höhe der .custom-boxes übersteigt */
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .section3 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50%;
+        margin-left: auto;
+        overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt die Höhe der .custom-boxes übersteigt */
+
+    }
+}
+
+
+
+
+
 
 nav {
     position: relative;
@@ -96,6 +176,7 @@ nav {
     border-width: 4px;
     border-radius: 14px;
     padding: 10px;
+    height: 100%;
 }
 
 .toggle-menu {
@@ -174,17 +255,23 @@ nav {
 
 .background {
     display: grid;
-    height: 600vh;
+    height: 100%;
     width: 100%;
     grid-template-rows: repeat(2, 1fr); 
     grid-template-columns: repeat(5, 1fr);
-    position: absolute;
+    position: fixed;
     left: 0;
     z-index: -1;
 }
 
+@media (min-width: 768px) {
+    .background {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}
 
-.grid-maerkli {
+
+.maerkli {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,10 +279,54 @@ nav {
     height: 100vh; /* Volle Höhe des Viewports */
 }
 
-.grid-maerkli img {
+.maerkli img {
     max-width: 100%; /* Damit das Bild responsiv bleibt */
     max-height: 100%;
 }
+
+@media (min-width: 780px) {
+    .maerkli {
+        height: 40vh;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .maerkli {
+        position: fixed;
+        width: 40%;
+    }
+
+}
+
+
+
+.text-with-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Positioniert die Elemente am rechten Rand des Containers */
+        margin-bottom: 10px;
+}
+
+.text-with-arrow p {
+    margin-right: 10px; /* Abstand zwischen Text und Pfeil */
+    text-decoration: underline;
+
+}
+
+.pfeil {
+    width: 24px;
+    height: auto; /* behält das Seitenverhältnis des Bildes bei */
+}
+
+.text-with-arrow p:hover {
+    color: blue; /* Ändert die Textfarbe zu blau beim Überfahren mit der Maus */
+    font-weight: bold;
+}
+
+
 
 .column-blue {
       background-color: blue;
@@ -221,6 +352,7 @@ nav {
     font-style: normal;
     color: white;
     font-size: 30pt;
+    text-align: center;
   }
 
 .vierer-grid {
@@ -280,10 +412,16 @@ nav {
     height: 80%; /* Untere vier Fünftel */
     padding: 16px;
     padding-top: 20px;
-
-
-
 }
+
+@media screen and (min-width: 768px) {
+    .schmalerer-bottom {
+        padding-left: 50px;
+        padding-right: 50px;
+    
+    }
+}
+
 
 hr {
     border-width: 1.6px;
@@ -294,11 +432,14 @@ hr {
 
 footer {
     margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-color: black;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    position: static;
     padding: 16px;
     height: 180px;
     width: 100%;
