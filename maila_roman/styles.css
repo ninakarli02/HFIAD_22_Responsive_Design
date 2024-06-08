@@ -69,10 +69,10 @@ a {
     font-weight: 400;
     font-style: normal;
     font-size: 16pt;
-    line-height: 26pt;
     letter-spacing: 1px;
     padding-bottom: 16px;
-    color: #1C2070;
+    color: lightblue;
+    text-decoration: none;
 
 
 }
@@ -99,6 +99,25 @@ a {
     margin: 24px;
     margin-right: 52px;
     align-self: flex-end; /* Menü nach rechts ausrichten */
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 780px) {
+    .header-navi{
+        flex-direction: column;
+    }
+    .menu-fullsscreen{
+        display: none!important;
+    }
+    .visible {
+        display: flex!important;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        align-items: center;
+        height: 100px;
+    }
 }
 
 
@@ -107,51 +126,73 @@ a {
     height: 4px;
     width: 40px;
     background-color: lightblue;
-    margin: 10px 0;
+    margin: 4px 0;
     transition: 0.4s;
 }
 
 
 .menu-fullsscreen {
-    display: none;
-    align-items: left;
-    height: 300px;
-    width: 100vw;
-    padding: 24px;
-    margin: 24px;
-    background-color: lightblue;
-    color: #1C2070;
-    text-align: left;
-    transition: 0.3s;
-    border-radius: 24px;
-}
-
-.header-navi:hover .menu-fullsscreen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
+    height: 300px;
+    padding: 36px;
+    margin: 0;
+    background-color: #1C2070;
+    color: lightblue;
+    text-align: left;
     line-height: 0;
+    border-radius: 0;
     
 }
 
 @media (min-width: 780px) {
-    .header-navi:hover .menu-fullsscreen {
+    .menu-fullsscreen {
         flex-direction: row;    
         height: 90px;
         width: 100vw;
         justify-content: space-around;
-        padding: 24px;
-        padding-top: 40px;
         align-items: center;
         line-height: 0;
-}
+        position: fixed;
+    }
+
+    .burger-menu {
+        display: none;
+    }
     
 }
 
-.header-navi:hover .burger-menu .bar {
-    display: none;
+
+@media (max-width: 779px) { 
+    .header-navi:hover .menu-fullsscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    line-height: 0;
+    padding: 40px;
+    height: 60vh;
+    width: 100vw;
+    }
+}
+
+@media (min-width: 780px) {
+    .header-navi .menu-fullsscreen {
+        display: flex;
+        flex-direction: row;    
+        height: 170px;
+        width: 100vw;
+        justify-content: space-around;
+        padding: 24px;
+        padding-top: 120px;
+        align-items: center;
+    }
     
+    .header-navi:hover .menu-fullsscreen {
+        display: flex;
+    }
 }
 
 
