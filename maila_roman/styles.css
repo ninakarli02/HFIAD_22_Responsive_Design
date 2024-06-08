@@ -138,10 +138,13 @@ a {
 @media (min-width: 780px) {
     .header-navi:hover .menu-fullsscreen {
         flex-direction: row;    
-        height: 100px;
+        height: 90px;
         width: 100vw;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding: 24px;
+        padding-top: 40px;
         align-items: center;
+        line-height: 0;
 }
     
 }
@@ -190,7 +193,17 @@ br {
     padding-left: 140px;   
     padding-right: 140px;
 }
-}s
+}
+
+@media (min-width: 900px) {
+    .section1 {
+    padding-left: 240px;   
+    padding-right: 240px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+}
 
 .rounded-rectangle {
     background-color: #F8F3EB;
@@ -210,9 +223,47 @@ br {
 }
 }
 
+@media (min-width: 900px) {
+    .rounded-rectangle {
+     width: 220px;  
+     transform: translate(-35px, -160%);
+     position: absolute;
+}
+}
+
 .titel-verschoben {
     transform: translate(0,-100%);
     position: absolute;
+}
+
+@media (min-width: 900px) {
+    .titel-verschoben {
+     transform: translate(0,-190%);
+     position: absolute;
+}
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .hidden {
+        display: flex;
+    }
+}
+
+.image-width {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .image-width  {
+        display: flex;
+    width: 600px;
+    padding: 24px;
+    padding-top: 0;
+    }
 }
 
 .button-read-more {
@@ -273,12 +324,29 @@ br {
     }
 }
 
+@media (min-width: 900px) {
+    .section2 {
+        padding-left: 240px;   
+        padding-right: 240px;
+    }
+}
+
+
 
 .album {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Optional: Fügt Platz zwischen den Bildern hinzu */
+    
 }
+
+@media (min-width: 900px) {
+    .album {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 
 
 .album-image {
@@ -294,6 +362,27 @@ br {
         margin-right: 10px; /* Optional: Fügt Platz zwischen den Bildern hinzu */
     }
 }
+
+@media (min-width: 900px) {
+    .album-image {
+        flex-basis: 30%;
+        max-width: 30%; /* Stellt sicher, dass die Bilder nicht größer als die Hälfte des Containers werden */
+        margin-right: 10px; /* Optional: Fügt Platz zwischen den Bildern hinzu */
+    }
+}
+
+.album-hidden {
+    display: flex;
+
+}
+
+@media (min-width: 900px) {
+    .album-hidden {
+    display: none;
+
+    }
+}
+
 
 
 .button-streamen {
@@ -352,6 +441,13 @@ br {
     }
 }
 
+@media (min-width: 900px) {
+    .section3 {
+        padding-left: 240px;   
+        padding-right: 240px;
+    }
+}
+
 
 .tourdates-bundles {
     display: flex;
@@ -374,13 +470,21 @@ br {
     }
 }
 
+@media (min-width: 900px) {
+    .tourdates {
+        flex-basis: 25%;
+        max-width: 25%; /* Stellt sicher, dass die Bilder nicht größer als die Hälfte des Containers werden */
+        margin-right: 10px; /* Optional: Fügt Platz zwischen den Bildern hinzu */
+    }
+}
+
 .button-buy-tickets {
     background-color: #1C2070;
     color: #F8F3EB;
     border: none;
     padding: 10px 20px;
     height: 48px;
-    width: 70%;    
+    width: 220px;    
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -419,6 +523,12 @@ br {
 @media (min-width: 780px) {
     .eingerueckt {
     padding-left: 0;
+}
+} 
+
+@media (min-width: 900px) {
+    .eingerueckt {
+    padding-left: 28px;
 }
 } 
 
