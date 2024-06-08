@@ -1,14 +1,14 @@
 @font-face {
     font-family: Monument Extended;
-    src: url(./maila_roman/fonts/Monument_Extended/PPMonumentExtended-Bold.otf);
+    src: url(./fonts/Monument_Extended/PPMonumentExtended-Bold.otf);
 }
 @font-face {
     font-family: Monument Extended Regular;
-    src: url(./maila_roman/fonts/Monument_Extended/PPMonumentExtended-Regular.otf);
+    src: url(./fonts/Monument_Extended/PPMonumentExtended-Regular.otf);
 }
 @font-face {
     font-family: Mori;
-    src: url(./maila_roman/fonts/Mori/PPMori-Regular.otf);
+    src: url(./fonts/Mori/PPMori-Regular.otf);
 }
 
 
