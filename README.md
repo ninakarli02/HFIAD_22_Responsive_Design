@@ -1,1 +1,0 @@
-# HFIAD_22_Responsive_Design
