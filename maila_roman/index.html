@@ -12,7 +12,7 @@
         <header class="header-container">
 
             <nav class="header-navi">
-                <label for="toggle-menu" class="burger-menu">
+                <label for="toggle-menu" class="burger-menu" tabindex="0">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -30,55 +30,84 @@
     </section>
 
     <section class="section1">
-        <h1 class="blue">Malia</h1>
+        <div>
+            <div class="rounded-rectangle"></div>
+            <h1 class="blue titel-verschoben">Malia</h1 tabindex="1">
+    </div>
+
         <br>
         <p>Malias Mutter stammt aus Malawi, der Vater ist Brite. Als Teenager siedelte sie aus ihrer Heimat über nach London und begann zu singen. 2001 hörte sie in New York zufällig ein Lied der Französin Liane Foly und war so fasziniert, dass sie mit dem Komponisten und Produzenten des Songs, André Manoukian, Kontakt aufnahm und seither mit ihm zusammen drei Alben herausbrachte. Ihr 2002 erschienenes Debütalbum Yellow Daffodils kam bei Kritikern und Publikum gut an und brachte ihr einen ersten Charterfolg. </p>
        <br>
-        <button class="button-read-more">Mehr lesen</button>
+        <button class="button-read-more">Mehr lesen</button tabindex="2">
     </section>
 
     <section class="section2">
-        <h1 class="white">Albums</h1>
+        <h1 class="white">Albums</h1 tabindex="3">
         <br>
         <br>
-        <img src="images/Album_1.jpg" alt="Bild von Albumcover">
+        <div class="album">
+        <img class="album-image" src="images/Album_1.jpg" alt="Bild von Albumcover" tabindex="4">
         <br>
-        <img src="images/Album_2.jpg" alt="Bild von Albumcover">
+        <img class="album-image" src="images/Album_2.jpg" alt="Bild von Albumcover" tabindex="5">
         <br>
-        <img src="images/Album_3.jpg" alt="Bild von Albumcover">
+        <img class="album-image" src="images/Album_3.jpg" alt="Bild von Albumcover" tabindex="6">
         <br>
-        <img src="images/Album_4.jpg" alt="Bild von Albumcover">
+        <img class="album-image" src="images/Album_4.jpg" alt="Bild von Albumcover" tabindex="7">
         <br>
-        <img src="images/Album_5.jpg" alt="Bild von Albumcover">
+        <img class="album-image" src="images/Album_5.jpg" alt="Bild von Albumcover" tabindex="8">
         <br>
         <br>
-        <button class="button-streamen">Jetzt streamen</button>
+    </div>
+        <button class="button-streamen">Jetzt streamen</button tabindex="9">
     </section>
 
     <section class="section3">
-        <h1 class="blue ">Tourdates</h1>
+        <h1 class="blue ">Tourdates</h1 tabindex="10">
         <br>
         <br>
         <br>
-        <h2 class="eingerueckt">24.04.2024</h2>  
-        <p class="eingerueckt">Amsterdam, Zentith</p>     
-        <button class="button-buy-tickets">Tickets kaufen</button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 class="eingerueckt">24.04.2024</h2>  
-        <p class="eingerueckt">Amsterdam, Zentith</p>     
-        <button class="button-buy-tickets">Tickets kaufen</button>
+        <div class="tourdates-bundles">
+            <div class="tourdates">
+                <h2 class="eingerueckt">24.04.2025</h2>  
+                <p class="eingerueckt">Amsterdam, Zentith</p>     
+                <button class="button-buy-tickets">Tickets kaufen</button>
+            </div>
         <br>
         <br>
         <br>
         <br>
-        <h2 class="eingerueckt">24.04.2024</h2>  
-        <p class="eingerueckt">Amsterdam, Zentith</p>     
-        <button class="button-buy-tickets">Tickets kaufen</button>
+            <div class="tourdates">
+                <h2 class="eingerueckt">28.04.2025</h2>  
+                <p class="eingerueckt">Prag, Tschechien</p>     
+                <button class="button-buy-tickets">Tickets kaufen</button>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+             <div class="tourdates">
+                <h2 class="eingerueckt">30.04.2025</h2>  
+                <p class="eingerueckt">Zürich, Schweiz</p>     
+                <button class="button-buy-tickets">Tickets kaufen</button>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="tourdates">
+            <h2 class="eingerueckt">02.05.2025</h2>  
+            <p class="eingerueckt">Basel, Schweiz</p>     
+            <button class="button-buy-tickets">Tickets kaufen</button>
+        </div>
+        </div>
     </section>
 
+
+<footer>
+    <div class="footer">
+        <p>© 2021 Malia – Roman's Design</p>
+    </div>
+</footer>
     
 </body>
 </html>
